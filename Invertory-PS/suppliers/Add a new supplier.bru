@@ -1,0 +1,30 @@
+meta {
+  name: Add a new supplier
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3001/suppliers
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "supplier_name": "Arduino Supplier",
+    "contact_name": "Mario Rossi",
+    "phone": "123456789",
+    "email": "info@arduino.com"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

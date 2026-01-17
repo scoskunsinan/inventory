@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Invertory-PS",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

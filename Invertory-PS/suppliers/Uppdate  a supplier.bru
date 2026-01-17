@@ -1,0 +1,26 @@
+meta {
+  name: Uppdate  a supplier
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3001/suppliers/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "supplier_name": "Updated Supplier",
+    "contact_name": "Jane Doe",
+    "phone": "999999",
+    "email": "new@mail.com"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
