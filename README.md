@@ -89,7 +89,7 @@ npm run dev
 
 När servern är igång visas:
 
-Server running on port 3001
+Server running on port 3000
 API Endpoints
 Hämta alla produkter (inklusive leverantörsinformation)
 
