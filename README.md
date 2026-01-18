@@ -27,16 +27,21 @@ Detta projekt är ett webbaserat lagerhanteringssystem byggt med **Node.js**, **
 
 ## 📁 Projektstruktur
 
-inventory-system
+Inventory-PS
 │
-├── server.js
-├── db.js
 ├── routes
-│ ├── products.js
-│ └── suppliers.js
+│   ├── products.js
+│   └── suppliers.js
+│
 ├── .env
+├── .gitignore
+├── db.js
+├── server.js
 ├── package.json
-└── README.md
+├── package-lock.json
+├── README.md
+└── node_modules    
+
 
 
 ---
