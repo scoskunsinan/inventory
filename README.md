@@ -58,9 +58,8 @@ CREATE TABLE suppliers (
   contact_person TEXT NOT NULL,
   email TEXT NOT NULL,
   phone TEXT NOT NULL,
-  country TEXT NOT NULL
 );
-Products (med relation)
+Products 
 
 CREATE TABLE products (
   id SERIAL PRIMARY KEY,
@@ -68,7 +67,7 @@ CREATE TABLE products (
   quantity INTEGER NOT NULL,
   price NUMERIC(10,2) NOT NULL,
   category TEXT NOT NULL,
-  supplier_id INTEGER REFERENCES suppliers(id) ON DELETE SET NULL
+  
 );
 4. Skapa .env-fil
 
