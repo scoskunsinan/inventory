@@ -2,6 +2,19 @@ const express = require("express");
 const router = express.Router();
 const pool = require("../db");
 
+// test endpoint
+router.get("/test", async (req, res) => {
+  try {
+    const result = await pool.query("SELECT 1");
+    res.json({ ok: true, data: result.rows });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+
+
 /// GET alla produkter
 router.get("/", async (req, res) => {
   const result = await pool.query("SELECT * FROM products");
