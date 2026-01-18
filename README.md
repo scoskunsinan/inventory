@@ -127,10 +127,10 @@ Skapa ny leverantör
 POST /suppliers
 
 {
-  "name": "iphone 14",
-  "quantity": 15,
-  "price": 399.99,
-  "category": "Elektronik"
+  "supplier_name": "Arduino Supplier",
+  "contact_name": "Mario Rossi",
+  "phone": "123456789",
+  "email": "info@arduino.com"
 }
 
 Uppdatera leverantör
