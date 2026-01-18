@@ -78,7 +78,7 @@ DB_USER=postgres
 DB_PASSWORD=password
 DB_NAME=postgres
 DB_PORT=5432
-PORT=3001
+PORT=3000
 
 Starta servern
 Med Node
@@ -127,11 +127,10 @@ Skapa ny leverantör
 POST /suppliers
 
 {
-  "name": "Tech AB",
-  "contact_person": "Anna Svensson",
-  "email": "anna@techab.se",
-  "phone": "0701234567",
-  "country": "Sweden"
+  "name": "iphone 14",
+  "quantity": 15,
+  "price": 399.99,
+  "category": "Elektronik"
 }
 
 Uppdatera leverantör
