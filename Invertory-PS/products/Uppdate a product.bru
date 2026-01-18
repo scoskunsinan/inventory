@@ -5,9 +5,18 @@ meta {
 }
 
 put {
-  url: http://localhost:3000/products
-  body: none
-  auth: inherit
+  url: http://localhost:3000/products/10
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Ipad",
+    "quantity": 15,
+    "price": 19.99,
+    "category": "Surfplatta"
+  }
 }
 
 settings {
